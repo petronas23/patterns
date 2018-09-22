@@ -5,15 +5,18 @@
 <body>
 <form id='images'>
 Input in each image sizes of image you want: <br> 
-	<input class="image" name="image[]" type="text" value="" style="width: 100px; height: 30px;"><br>
-	<input class="image" name="image[]" type="text" value="" style="width: 100px; height: 30px;"><br>
-	<input class="image" name="image[]" type="text" value="" style="width: 100px; height: 30px;"><br>
+	Image 1: <input class="image" name="image[]" type="text" value="" style="width: 100px; height: 30px;"><br>
+	Image 2: <input class="image" name="image[]" type="text" value="" style="width: 100px; height: 30px;"><br>
+	Image 3: <input class="image" name="image[]" type="text" value="" style="width: 100px; height: 30px;"><br>
+	<br> <input type="submit" id="submit">
 </form>
 
 </body>
 <footer>
 	<script>
-	$(document).on('click','body',function(e){
+	$('#images').submit(function(e){
+	
+	//$(document).on('click','body',function(e){
 		var name = $('#name').val();
 		
 		if(name != ''){
