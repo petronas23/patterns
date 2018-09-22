@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+Input in each image sizes of image you want<input id="name" name="name" type="text" value="" style="width: 100px; height: 30px;"><br>
+
+
+
+</body>
+<footer>
+	<script>
+	$(document).on('click','body',function(e){
+		var name = $('#name').val();
+		
+		if(name != ''){
+		
+			$('h1').replaceWith('<h1>'+ name +' write Hello world</h1>');
+			alert('well done');
+		}   
+			
+	//test1
+	});
+	</script>
+</footer>
+</html>
